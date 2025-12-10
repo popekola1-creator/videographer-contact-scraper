@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        body { width: 350px; padding: 15px; font-family: Arial; }
+        h2 { color: #4a6fa5; margin-top: 0; }
+        button { 
+            width: 100%; padding: 10px; margin: 5px 0;
+            background: #4a6fa5; color: white; border: none;
+            border-radius: 4px; cursor: pointer;
+        }
+        .result { background: #f5f5f5; padding: 10px; margin: 10px 0; }
+        .success { color: green; }
+        .error { color: red; }
+    </style>
+</head>
+<body>
+    <h2>🎥 Videographer Contact Finder</h2>
+    
+    <input type="text" id="location" placeholder="City, State" style="width:100%;padding:8px;margin:5px 0;">
+    
+    <select id="searchType" style="width:100%;padding:8px;margin:5px 0;">
+        <option value="videographers">Videographers</option>
+        <option value="wedding">Wedding Videographers</option>
+    </select>
+    
+    <button id="scrapeCurrent">Extract from Current Page</button>
+    <button id="searchGoogle">Search Google</button>
+    
+    <div id="status"></div>
+    <div id="results"></div>
+    
+    <button id="exportCSV" style="background:#28a745;">Export as CSV</button>
+    
+    <script src="popup.js"></script>
+</body>
+</html>
